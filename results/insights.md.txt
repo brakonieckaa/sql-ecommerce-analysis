@@ -1,0 +1,21 @@
+## Wnioski - sprzeadaż
+
+1. Całkowity przychód w analizowanym okresie wyniósł 303979.33 zł.
+2. Sprzedaż wykazuje zróżnicowanie miesięczne – najwyższy przychód odnotowano w marcu, a najniższy w listopadzie.
+3. Największa część przychodu pochodzi z zamówień wysyłanych do Polski, następnie do USA i UK.
+4. Średnia wartość zamówienia wynosi 1652 zł.
+6. Zamówienia z rabatem generują istopną część przychodu, cp sugeruje zauważalny wpływ promocji na sprzedaż.
+
+## Wnioski - klienci
+
+1. Przychód jest skoncentrowany w niewielkiej grupie klientów, przy czym 10 najlepszych klientów odpowiada za znaczącą część sprzedaży.
+2. Większość klientów składa niewielką liczbę zamówień, natomiast około połowa klientów dokonała zakupów wielokrotnie.
+3. Część zarejestrowanych klientów nie złożyła żadnego zamówienia w analizowanym okresie.
+4. Klienci z USA generują najwyższy przychód, nawet jeśli nie stanowią najliczniejszej grupy.
+
+## Wnioski - produkty
+
+1. Sprzedaż opiera się głównie na kilku najlepiej sprzedających się produktach, które generują nieproporcjonalnie wysoki przychód.
+2. Niektóre produkty osiągają wysoki przychód dzięki wysokiej cenie jednostkowej, podczas gdy inne dzięki dużemu wolumenowi sprzedaży.
+3. W analizowanym okresie występują produkty, które nie odnotowały żadnej sprzedaży.
+4. Przychód jest nierównomiernie rozłożony pomiędzy kategorie produktowe, z kategorią "Sports & Outdoors" jako dominującą.
