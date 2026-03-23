@@ -1,10 +1,10 @@
-## Wnioski - sprzeadaż
+## Wnioski - sprzedaż
 
 1. Całkowity przychód w analizowanym okresie wyniósł 303979.33 zł.
 2. Sprzedaż wykazuje zróżnicowanie miesięczne – najwyższy przychód odnotowano w marcu, a najniższy w listopadzie.
 3. Największa część przychodu pochodzi z zamówień wysyłanych do Polski, następnie do USA i UK.
 4. Średnia wartość zamówienia wynosi 1652 zł.
-6. Zamówienia z rabatem generują istopną część przychodu, cp sugeruje zauważalny wpływ promocji na sprzedaż.
+6. Zamówienia z rabatem generują istotną część przychodu, co sugeruje zauważalny wpływ promocji na sprzedaż.
 
 ## Wnioski - klienci
 
