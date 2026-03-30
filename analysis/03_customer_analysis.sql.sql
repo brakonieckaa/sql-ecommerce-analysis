@@ -25,15 +25,18 @@ LIMIT 10;
 
 --Średnia liczba zamówień na klienta
 
-SELECT
-	ROUND(AVG(order_count), 2) AS avg_orders_per_customer
-FROM 
-	(SELECT
+WITH customer_orders AS
+	(
+	SELECT
 		c.customer_id
 		, COUNT(o.order_id) AS order_count
 	FROM customers c
 	JOIN orders o ON c.customer_id = o.customer_id
-	GROUP BY c.customer_id);
+	GROUP BY c.customer_id
+	)
+SELECT
+	ROUND(AVG(order_count), 2) AS avg_orders_per_customer
+	FROM customer_orders;
 
 
 --Klienci bez zamówień
