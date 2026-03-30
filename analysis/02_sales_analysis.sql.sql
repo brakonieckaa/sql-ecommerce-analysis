@@ -41,15 +41,15 @@ ORDER BY revenue DESC;
 
 --Średnia wartość zamówienia
 
-SELECT 
-	ROUND(AVG(avg_order_value))
-FROM
-	(SELECT
-			o.order_id
-			, SUM(oi.unit_price * oi.quantity * (1 - oi.discount)) AS avg_order_value
-	FROM orders o
-	JOIN order_items oi ON o.order_id = oi.order_id
-	GROUP BY o.order_id);
+WITH order_values AS 
+	(
+    SELECT o.order_id, SUM(oi.unit_price * oi.quantity * (1 - oi.discount)) AS order_value
+    FROM orders o
+    JOIN order_items oi ON o.order_id = oi.order_id
+    GROUP BY o.order_id
+	)
+SELECT ROUND(AVG(order_value)) AS avg_order_value
+FROM order_values;
 
 
 --Liczba zamówień miesięcznie
