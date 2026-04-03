@@ -1,14 +1,24 @@
---Top 10 klientów wg przychodu
+ --Ranking klientów wg przychodu
 
+WITH customer_revenue AS
+	(
+	SELECT
+		c.customer_id
+		, c.first_name
+		, c.last_name
+		, ROUND(SUM(oi.quantity * oi.unit_price * (1 - oi.discount)), 2) AS revenue
+	FROM customers c
+	JOIN orders o ON c.customer_id = o.customer_id
+	JOIN order_items oi ON o.order_id = oi.order_id
+	GROUP BY c.customer_id, c.first_name, c.last_name
+	)
 SELECT
-	c.customer_id
-	, ROUND(SUM(oi.quantity * oi.unit_price * (1 - oi.discount)), 2) AS revenue
-FROM customers c
-JOIN orders o ON c.customer_id = o.customer_id
-JOIN order_items oi ON o.order_id = oi.order_id
-GROUP BY c.customer_id
-ORDER BY revenue DESC
-LIMIT 10;
+	customer_id
+	, first_name
+	, last_name
+	, revenue
+	, RANK() OVER (ORDER BY revenue DESC) AS renenue_rank
+FROM customer_revenue;
 
 
 --Top 10 klientów wg ilości zamówień
