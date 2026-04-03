@@ -17,12 +17,14 @@ Celem projektu było zaprojektowanie relacyjnej bazy danych, uzupełnienie jej d
 - PostgreSQL
 - SQL
 - Git / GitHub
+- Techniki: CTE, funkcje okienkowe (RANK()), agregacje, podzapytania, JOINy)
 
 -- Struktura projektu
 - `schema/` – definicje tabel (CREATE TABLE)
 - `data/` – dane testowe (INSERT)
 - `analysis/` – zapytania analityczne SQL
 - `results/` – wnioski z analizy danych
+- `erd.png` – diagram relacji między tabelami (ERD)
 
 -- Zakres analiz
 - Walidacja i spójność danych
@@ -35,6 +37,13 @@ Celem projektu było zaprojektowanie relacyjnej bazy danych, uzupełnienie jej d
 2. Największa część przychodu pochodzi z zamówień wysyłanych do Polski, następnie do USA i UK.
 3. Klienci z USA generują najwyższy przychód, nawet jeśli nie stanowią najliczniejszej grupy.
 4. Sprzedaż opiera się głównie na kilku najlepiej sprzedających się produktach, które generują nieproporcjonalnie wysoki przychód.
+
+-- Jak uruchomić projekt
+1. Zainstaluj PostgreSQL (wersja 14+)
+2. Utwórz nową bazę danych
+3. Wykonaj skrypt: schema/01_create_tables.sql
+4. Wykonaj skrypt: data/01_insert_data.sql
+5. Uruchom zapytania analityczne z folderu analysis/
 
 -- Autor
 Anna Brakoniecka
