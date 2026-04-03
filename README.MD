@@ -17,7 +17,7 @@ Celem projektu było zaprojektowanie relacyjnej bazy danych, uzupełnienie jej d
 - PostgreSQL
 - SQL
 - Git / GitHub
-- Techniki: CTE, funkcje okienkowe (RANK()), agregacje, podzapytania, JOINy)
+- Techniki: CTE, funkcje okienkowe (RANK(), agregacje, podzapytania, JOINy)
 
 -- Struktura projektu
 - `schema/` – definicje tabel (CREATE TABLE)
