@@ -1,4 +1,4 @@
-SQL – analiza danych sprzedażowych (PostgreSQL)
+## Część 1 — PostgreSQL
 
 -- Opis projektu
 Projekt analityczny SQL polegający na analizie danych sprzedażowych sklepu e-commerce.
@@ -44,6 +44,41 @@ Celem projektu było zaprojektowanie relacyjnej bazy danych, uzupełnienie jej d
 3. Wykonaj skrypt: schema/01_create_tables.sql
 4. Wykonaj skrypt: data/01_insert_data.sql
 5. Uruchom zapytania analityczne z folderu analysis/
+
+## Część 2 — Excel
+
+-- Opis
+Analiza danych sprzedażowych w Excelu oparta na tych samych danych co część SQL.
+Celem było stworzenie przejrzystego, interaktywnego raportu demonstrującego 
+umiejętności pracy z danymi w Excelu.
+
+-- Technologie
+- Microsoft Excel
+- Power Query (import danych z CSV)
+
+-- Struktura pliku
+- `00_INFO` – strona tytułowa i opis projektu
+- `01_DANE` – dane źródłowe: zamówienia, klienci, produkty (import przez Power Query)
+- `02_OBLICZENIA` – formuły i funkcje analityczne
+- `03_TABELE` – tabele przestawne
+- `04_DASHBOARD` – interaktywny dashboard z KPI i wykresami
+
+-- Zastosowane funkcje
+JEŻELI, WARUNKI, LUB, WYSZUKAJ.PIONOWO, INDEKS, 
+TEKST, SUMA.WARUNKÓW, UNIKATOWE
+
+-- Kluczowe elementy
+- Segmentacja klientów (Nieaktywny / Niski / Średni / Wysoki)
+- Kategoryzacja produktów według przychodu
+- Analiza wysyłek krajowych vs zagranicznych
+- Interaktywny wykres przychodu miesięcznego z filtrem kraju (pole kombi)
+- Dashboard z 4 wskaźnikami KPI i 4 wykresami
+
+-- Kluczowe wnioski
+1. Polska generuje największy przychód spośród wszystkich krajów wysyłki.
+2. 78% przychodu pochodzi od klientów z segmentu "Wysoki".
+3. Mountain Bike Helmet to produkt z najwyższym przychodem.
+4. Prawie 20% zamówień jest wysyłanych za granicę kraju klienta.
 
 -- Autor
 Anna Brakoniecka
